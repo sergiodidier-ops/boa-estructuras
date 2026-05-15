@@ -67,7 +67,7 @@ export default function Home() {
   <div className="relative z-10 mx-auto max-w-6xl">
     <div className="max-w-3xl">
       <Image
-        src="/logo/logo.png"
+        src="/logo/logo.PNG"
         alt="BOA Estructuras"
         width={170}
         height={170}
