@@ -53,7 +53,7 @@ export default function MetalPage() {
                   Solicitar información
                 </a>
               </div>
-            </div>
+            </a>
           ))}
 
         </div>
