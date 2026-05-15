@@ -1,7 +1,8 @@
 const modelos = [
   {
-    nombre: "Modelo Metal 1",
-    imagen: "/fotos/metal/mod-metal1.png",
+    nombre: "Modelo Ksan Roco",
+    imagen: "/fotos/metal/mod-ksa-roco.png",
+    enlace: "/parques-infantiles/metal/mod-ksa-roco",
   },
   {
     nombre: "Modelo Metal 2",
@@ -29,8 +30,8 @@ export default function MetalPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {modelos.map((modelo) => (
-            <div
-              key={modelo.nombre}
+  <a href={modelo.enlace} key={modelo.nombre}>
+         <div>
               className="overflow-hidden rounded-3xl bg-white shadow-2xl hover:scale-105 transition duration-300"
             >
               <img
