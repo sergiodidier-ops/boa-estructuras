@@ -110,16 +110,26 @@ export default function Home() {
 <section className="bg-white px-6 py-12">
   <div className="mx-auto grid max-w-6xl gap-6 text-center md:grid-cols-4">
     {[
-      ["Parques", "infantiles"],
-      ["Cerramientos", "deportivos"],
-      ["Mobiliario", "urbano"],
-      ["Proyectos", "a medida"],
-    ].map(([title, text]) => (
-      <div key={title} className="rounded-2xl bg-gray-100 p-6 shadow-sm">
-        <h3 className="text-3xl font-black text-blue-950">{title}</h3>
-        <p className="mt-2 text-gray-600">{text}</p>
-      </div>
-    ))}
+  ["Parques", "infantiles"],
+  ["Cerramientos", "deportivos"],
+  ["Mobiliario", "urbano"],
+  ["Proyectos", "a medida"],
+].map(([title, text]) => (
+  <a
+    key={title}
+    href={title === "Parques" ? "/parques-infantiles" : "#"}
+  >
+    <div className="rounded-2xl bg-gray-100 p-8 hover:scale-105 transition">
+      <h3 className="text-3xl font-black text-blue-950">
+        {title}
+      </h3>
+
+      <p className="mt-2 text-gray-600">
+        {text}
+      </p>
+    </div>
+  </a>
+))}
   </div>
 </section>
       {/* SERVICIOS */}
