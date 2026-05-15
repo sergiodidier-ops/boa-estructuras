@@ -1,22 +1,32 @@
 export default function ParquesInfantiles() {
   const series = [
-    {
-      nombre: "Serie Natura",
-      descripcion: "Parques infantiles con acabados naturales y diseño moderno.",
-    },
-    {
-      nombre: "Serie Urban",
-      descripcion: "Diseños urbanos resistentes para espacios públicos.",
-    },
-    {
-      nombre: "Serie Inclusiva",
-      descripcion: "Juegos adaptados para niños con movilidad reducida.",
-    },
-    {
-      nombre: "Serie Multijuego",
-      descripcion: "Grandes estructuras con múltiples zonas de juego.",
-    },
-  ];
+
+        {
+    nombre: "Serie Metal",
+    descripcion: "Parques infantiles metálicos resistentes, modernos y personalizables.",
+    enlace: "/parques-infantiles/metal",
+  },
+  {
+    nombre: "Serie Madera",
+    descripcion: "Parques infantiles en madera tratada para exteriores.",
+    enlace: "/parques-infantiles/madera",
+  },
+  {
+    nombre: "Serie Robinia",
+    descripcion: "Juegos infantiles de estética natural y gran resistencia.",
+    enlace: "/parques-infantiles/robinia",
+  },
+  {
+    nombre: "Serie Jugar es Crecer",
+    descripcion: "Modelos pensados para aprendizaje, juego y desarrollo infantil.",
+    enlace: "/parques-infantiles/jugar-es-crecer",
+  },
+  {
+    nombre: "Serie Independiente",
+    descripcion: "Columpios, balancines y elementos sueltos de juego infantil.",
+    enlace: "/parques-infantiles/independiente",
+  },
+];
 
   return (
     <main className="min-h-screen bg-white px-6 py-16">
@@ -44,9 +54,12 @@ export default function ParquesInfantiles() {
                 {serie.descripcion}
               </p>
 
-              <button className="bg-blue-900 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">
-                Ver catálogo
-              </button>
+              <a
+  href={serie.enlace}
+  className="inline-block bg-blue-900 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition"
+>
+  Ver modelos
+</a>
             </div>
           ))}
         </div>
