@@ -1,15 +1,15 @@
 const modelos = [
   {
     nombre: "Modelo Metal 1",
-    imagen: "/fotos/metal/metal1.png",
+    imagen: "/fotos/metal/mod-metal1.png",
   },
   {
     nombre: "Modelo Metal 2",
-    imagen: "/fotos/metal/metal2.png",
+    imagen: "/fotos/metal/mod-metal2.png",
   },
   {
     nombre: "Modelo Metal 3",
-    imagen: "/fotos/metal/metal3.png",
+    imagen: "/fotos/metal/mod-metal3.png",
   },
 ];
 
