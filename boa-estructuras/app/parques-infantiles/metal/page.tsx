@@ -31,9 +31,9 @@ export default function MetalPage() {
 
           {modelos.map((modelo) => (
   <a href={modelo.enlace} key={modelo.nombre}>
-         <div>
-              className="overflow-hidden rounded-3xl bg-white shadow-2xl hover:scale-105 transition duration-300"
-            >
+         <div className="overflow-hidden rounded-3xl bg-white shadow-2xl hover:scale-105 transition duration-300"></div>
+            
+               
               <img
                 src={modelo.imagen}
                 alt={modelo.nombre}
