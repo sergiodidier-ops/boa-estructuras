@@ -1,5 +1,5 @@
 const fotos = [
-  "/fotos/metal/mod-torreroko/portada.png",
+  
   "/fotos/metal/mod-torreroko/mod-torreroko-lateral.png",
   "/fotos/metal/mod-torreroko/mod-torreroko-aerea.png",
   "/fotos/metal/mod-torreroko/mod-torreroko-medidas.png",
