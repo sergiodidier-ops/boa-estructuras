@@ -22,7 +22,7 @@ export default function ModKsaRocoPage() {
         </div>
 
         <a
-          href="/fotos/metal/mod-ksa-roco/Ficha tecnica de MOD-KSA ROCO.pdf"
+          href="/fotos/metal/mod-ksa-roco/ficha-tecnica.pdf"
           target="_blank"
           className="mt-10 inline-block rounded-2xl bg-blue-600 px-6 py-4 text-white font-bold"
         >
