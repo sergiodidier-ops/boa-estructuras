@@ -23,7 +23,12 @@ const modelos = [
   nombre: "Kbaña",
   imagen: "/fotos/metal/mod-kbaña/portada.png",
   enlace: "/parques-infantiles/metal/mod-kbaña",
-},
+ },
+{
+  nombre: "Kbaña-duo",
+  imagen: "/fotos/metal/mod-kbaña-duo/portada.png",
+  enlace: "/parques-infantiles/metal/mod-kbaña-duo",
+ },
 ]
 export default function MetalPage() {
   return (
