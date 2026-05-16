@@ -19,8 +19,12 @@ const modelos = [
     imagen: "/fotos/metal/mod-kcity/portada.png",
     enlace: "/parques-infantiles/metal/mod-kcity",
   },
-];
-
+  {
+  nombre: "Kbaña",
+  imagen: "/fotos/metal/mod-kbaña/portada.png",
+  enlace: "/parques-infantiles/metal/mod-kbaña",
+},
+]
 export default function MetalPage() {
   return (
     <main className="min-h-screen bg-white px-6 py-16">
