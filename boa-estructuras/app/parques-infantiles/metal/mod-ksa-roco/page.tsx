@@ -1,8 +1,7 @@
 const fotos = [
-  "/fotos/metal/mod-ksa-roco/foto1.png",
-  "/fotos/metal/mod-ksa-roco/foto2.png",
-  "/fotos/metal/mod-ksa-roco/foto3.png",
-  "/fotos/metal/mod-ksa-roco/foto4.png",
+  "/fotos/metal/mod-ksa-roco/MOD-KSA MEDIDAS.png",
+  "/fotos/metal/mod-ksa-roco/mod-metal2.png",
+  "/fotos/metal/mod-ksa-roco/mod-metal3.png",
 ]
 
 export default function ModKsaRocoPage() {
@@ -21,6 +20,14 @@ export default function ModKsaRocoPage() {
             />
           ))}
         </div>
+
+        <a
+          href="/fotos/metal/mod-ksa-roco/Ficha tecnica de MOD-KSA ROCO.pdf"
+          target="_blank"
+          className="mt-10 inline-block rounded-2xl bg-blue-600 px-6 py-4 text-white font-bold"
+        >
+          Ver ficha técnica PDF
+        </a>
       </div>
     </main>
   )
