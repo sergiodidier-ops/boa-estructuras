@@ -1,7 +1,7 @@
 const modelos = [
   {
     nombre: "Ksa Roco",
-    imagen: "/fotos/metal/mod-ksa-roco/portada.png",
+    imagen: "/fotos/metal/portada.png",
     enlace: "/parques-infantiles/metal/mod-ksa-roco",
   },
   {
