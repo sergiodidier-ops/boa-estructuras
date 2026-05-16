@@ -5,9 +5,9 @@ const modelos = [
     enlace: "/parques-infantiles/metal/mod-ksa-roco",
   },
   {
-    nombre: "Metal 2",
-    imagen: "/fotos/metal/mod-metal2.png",
-    enlace: "#",
+    nombre: "TorreRoko",
+    imagen: "/fotos/metal/mod-torreroko/portada.png",
+    enlace: "/parques-infantiles/metal/mod-torreroko",
   },
   {
     nombre: "Metal 3",
