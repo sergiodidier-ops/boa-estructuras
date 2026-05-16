@@ -24,7 +24,7 @@ export default function ModKsetasPage() {
         </div>
 
         <a
-          href="/fotos/metal/mod-torreroko/ficha-tecnica.pdf"
+          href="/fotos/metal/mod-ksetas/ficha-tecnica.pdf"
           target="_blank"
           className="mt-10 inline-block rounded-2xl bg-blue-600 px-6 py-4 text-white font-bold"
         >
