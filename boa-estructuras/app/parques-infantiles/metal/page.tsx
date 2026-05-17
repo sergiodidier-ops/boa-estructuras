@@ -59,6 +59,11 @@ const modelos = [
   imagen: "/fotos/metal/mod-ksarbol/portada.png",
   enlace: "/parques-infantiles/metal/mod-ksarbol",
 },
+{
+  nombre: "TOWN",
+  imagen: "/fotos/metal/mod-town/portada.png",
+  enlace: "/parques-infantiles/metal/mod-town",
+},
 ]
 export default function MetalPage() {
   return (
