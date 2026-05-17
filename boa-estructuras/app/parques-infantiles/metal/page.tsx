@@ -34,6 +34,11 @@ const modelos = [
   imagen: "/fotos/metal/mod-ksa/portada.png",
   enlace: "/parques-infantiles/metal/mod-ksa",
 },
+{
+  nombre: "KSA Dúo",
+  imagen: "/fotos/metal/mod-ksa-duo/portada.png",
+  enlace: "/parques-infantiles/metal/mod-ksa-duo",
+},
 ]
 export default function MetalPage() {
   return (
