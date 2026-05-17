@@ -31,6 +31,11 @@ export default function ParquesInfantiles() {
   imagen: "/fotos/metal/mod-kbaña/portada.png",
   enlace: "/parques-infantiles/metal/mod-kbaña",
 },
+{
+  nombre: "Ksapont",
+  imagen: "/fotos/metal/mod-ksapont/portada.png",
+  enlace: "/parques-infantiles/metal/mod-ksapont",
+},
   ]
   return (
     <main className="min-h-screen bg-white px-6 py-16">
