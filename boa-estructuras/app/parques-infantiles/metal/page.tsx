@@ -41,7 +41,7 @@ export default function MetalPage() {
       <div className="max-w-7xl mx-auto">
         
         <h1 className="text-5xl font-bold text-gray-900 mb-4">
-          Serie Metal
+         Serie Metal 2025
         </h1>
 
         <p className="text-lg text-gray-600 mb-14">
