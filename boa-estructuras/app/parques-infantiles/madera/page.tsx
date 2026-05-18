@@ -1,4 +1,5 @@
-return (
+export default function MaderaPage() {
+  return (
   <main className="min-h-screen bg-[#f8f6f2] px-6 py-20">
     <div className="max-w-7xl mx-auto">
 
@@ -16,4 +17,5 @@ return (
 
     </div>
   </main>
-)
+ );
+}
