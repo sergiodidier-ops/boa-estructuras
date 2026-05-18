@@ -105,13 +105,13 @@ export default function MetalPage() {
     <main className="min-h-screen bg-white px-6 py-16">
       <div className="max-w-7xl mx-auto">
         
-        <h1 className="text-5xl font-bold text-gray-900 mb-4">
-         Serie Metal 2025
-        </h1>
+        <div className="mb-16">
+  <h1 className="text-6xl font-extrabold tracking-tight text-gray-900">
+    METAL 2026
+  </h1>
 
-        <p className="text-lg text-gray-600 mb-14">
-          Catálogo de parques infantiles de la Serie Metal.
-        </p>
+  <div className="w-24 h-1 bg-green-500 rounded-full mt-4"></div>
+</div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {modelos.map((modelo) => (
