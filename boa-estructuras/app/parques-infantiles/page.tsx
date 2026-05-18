@@ -26,11 +26,6 @@ export default function ParquesInfantiles() {
     descripcion: "Columpios, balancines y elementos sueltos de juego infantil.",
     enlace: "/parques-infantiles/independiente",
   },
-{
-  nombre: "KSABLANCA",
-  imagen: "/fotos/metal/mod-ksablanca/portada.png",
-  enlace: "/parques-infantiles/metal/mod-ksablanca",
-},
   ]
   return (
     <main className="min-h-screen bg-white px-6 py-16">
