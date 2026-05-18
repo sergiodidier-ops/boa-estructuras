@@ -50,13 +50,17 @@ export default function ParquesInfantiles() {
               key={index}
               className="rounded-3xl shadow-xl p-8 border border-gray-100 hover:scale-105 transition"
             >
-              <h2 className="text-3xl font-bold mb-4 text-blue-900">
-                {serie.nombre}
-              </h2>
+              <div className="mb-6">
+  <span className="text-xs uppercase tracking-[0.25em] text-gray-400">
+    Serie
+  </span>
 
-              <p className="text-gray-600 mb-6">
-                {serie.descripcion}
-              </p>
+  <h2 className="text-4xl font-black text-gray-900 mt-2 tracking-tight">
+    {serie.nombre.replace("Serie ", "")}
+  </h2>
+
+  <div className="w-12 h-[2px] bg-green-500 mt-4 rounded-full" />
+</div>
 
               <a
   href={serie.enlace}
