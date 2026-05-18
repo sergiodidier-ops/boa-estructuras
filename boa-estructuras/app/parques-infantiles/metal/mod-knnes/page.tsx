@@ -1,8 +1,8 @@
-export default function ModKracoviaPage() {
+export default function ModKnnesPage() {
   const fotos = [
-    "/fotos/metal/mod-kracovia/portada.png",
-    "/fotos/metal/mod-kracovia/mod-kracovia.png",
-    "/fotos/metal/mod-kracovia/mod-kracovia-lateral.png",
+    "/fotos/metal/mod-knnes/portada.png",
+    "/fotos/metal/mod-knnes/mod-knnes.png",
+    "/fotos/metal/mod-knnes/mod-knnes-trasera.png",
   ];
 
   return (
@@ -10,11 +10,11 @@ export default function ModKracoviaPage() {
       <div className="max-w-6xl mx-auto">
 
         <h1 className="text-5xl font-bold text-gray-900 mb-6">
-          KRACOVIA
+          KNNES
         </h1>
 
         <p className="text-lg text-gray-600 mb-12">
-          Modelo de parque infantil metálico KRACOVIA.
+          Modelo de parque infantil metálico KNNES.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -25,7 +25,7 @@ export default function ModKracoviaPage() {
             >
               <img
                 src={foto}
-                alt="Modelo KRACOVIA"
+                alt="Modelo KNNES"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -34,7 +34,7 @@ export default function ModKracoviaPage() {
 
         <div className="mt-12">
           <a
-            href="/fotos/metal/mod-kracovia/ficha-tecnica.pdf"
+            href="/fotos/metal/mod-knnes/ficha-tecnica.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-2xl transition"

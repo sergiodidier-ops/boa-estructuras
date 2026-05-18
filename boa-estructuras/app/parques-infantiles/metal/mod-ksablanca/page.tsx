@@ -1,8 +1,8 @@
-export default function ModKracoviaPage() {
+export default function ModKsablancaPage() {
   const fotos = [
-    "/fotos/metal/mod-kracovia/portada.png",
-    "/fotos/metal/mod-kracovia/mod-kracovia.png",
-    "/fotos/metal/mod-kracovia/mod-kracovia-lateral.png",
+    "/fotos/metal/mod-ksablanca/portada.png",
+    "/fotos/metal/mod-ksablanca/mod-ksablanca.png",
+    "/fotos/metal/mod-ksablanca/mod-ksablanca-trasera.png",
   ];
 
   return (
@@ -10,11 +10,11 @@ export default function ModKracoviaPage() {
       <div className="max-w-6xl mx-auto">
 
         <h1 className="text-5xl font-bold text-gray-900 mb-6">
-          KRACOVIA
+          KSABLANCA
         </h1>
 
         <p className="text-lg text-gray-600 mb-12">
-          Modelo de parque infantil metálico KRACOVIA.
+          Modelo de parque infantil metálico KSABLANCA.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -25,22 +25,11 @@ export default function ModKracoviaPage() {
             >
               <img
                 src={foto}
-                alt="Modelo KRACOVIA"
+                alt="Modelo KSABLANCA"
                 className="w-full h-full object-cover"
               />
             </div>
           ))}
-        </div>
-
-        <div className="mt-12">
-          <a
-            href="/fotos/metal/mod-kracovia/ficha-tecnica.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-2xl transition"
-          >
-            Descargar ficha técnica
-          </a>
         </div>
 
       </div>
