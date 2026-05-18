@@ -1,3 +1,11 @@
+const modelos = [
+  {
+    nombre: "KDIZ",
+    imagen: "/fotos/madera/mod-kdiz/portada.png",
+    enlace: "/parques-infantiles/madera/mod-kdiz",
+  },
+];
+
 export default function MaderaPage() {
   return (
   <main className="min-h-screen bg-[#f8f6f2] px-6 py-20">
