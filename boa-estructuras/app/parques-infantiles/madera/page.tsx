@@ -1,51 +1,60 @@
-const fotos = [
-  "/fotos/madera/mod-kdiz/portada.png",
-  "/fotos/madera/mod-kdiz/mod-kdiz.png",
-  "/fotos/madera/mod-kdiz/mod-kdiz-trasera.png",
-  "/fotos/madera/mod-kdiz/mod-kdiz-aerea.png",
+const modelos = [
+  {
+    nombre: "KDIZ",
+    imagen: "/fotos/madera/mod-kdiz/portada.png",
+    enlace: "/parques-infantiles/madera/mod-kdiz",
+  },
 ];
 
-export default function ModKdizPage() {
+export default function MaderaPage() {
   return (
     <main className="min-h-screen bg-[#f8f6f2] px-6 py-20">
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-20">
-          <span className="text-sm uppercase tracking-[0.35em] text-amber-700 font-medium">
+          <span className="text-sm uppercase tracking-[0.35em] text-amber-700">
             BOA ESTRUCTURAS
           </span>
 
           <h1 className="text-6xl font-black text-stone-900 mt-4 tracking-tight">
-            KDIZ
+            Serie Madera
           </h1>
 
-          <div className="w-20 h-[3px] bg-amber-600 mx-auto mt-6 rounded-full" />
+          <div className="w-20 h-[3px] bg-amber-600 mx-auto mt-6 rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 mb-20">
-          {fotos.map((foto) => (
-            <div
-              key={foto}
-              className="overflow-hidden rounded-[2rem] shadow-xl bg-white p-6"
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {modelos.map((modelo) => (
+            <a
+              key={modelo.nombre}
+              href={modelo.enlace}
+              className="bg-white rounded-[2rem] overflow-hidden shadow-xl hover:shadow-2xl transition duration-300"
             >
-              <img
-                src={foto}
-                alt="Modelo KDIZ"
-                className="w-full h-auto object-contain"
-              />
-            </div>
-          ))}
-        </div>
+              <div className="overflow-hidden">
+                <img
+                  src={modelo.imagen}
+                  alt={modelo.nombre}
+                  className="w-full h-72 object-contain p-6"
+                />
+              </div>
 
-        <div className="flex justify-center">
-          <a
-            href="/fotos/madera/mod-kdiz/ficha-tecnica.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center bg-amber-700 hover:bg-amber-800 text-white px-8 py-4 rounded-2xl text-lg font-semibold transition shadow-lg"
-          >
-            Ver ficha técnica
-          </a>
+              <div className="p-8">
+                <span className="text-xs uppercase tracking-[0.3em] text-stone-500">
+                  Serie
+                </span>
+
+                <h2 className="text-3xl font-black text-stone-900 mt-3">
+                  {modelo.nombre}
+                </h2>
+
+                <div className="w-14 h-[3px] bg-amber-600 rounded-full mt-4 mb-6"></div>
+
+                <span className="inline-block bg-green-500 text-white px-6 py-3 rounded-xl font-semibold">
+                  Solicitar información
+                </span>
+              </div>
+            </a>
+          ))}
         </div>
 
       </div>
