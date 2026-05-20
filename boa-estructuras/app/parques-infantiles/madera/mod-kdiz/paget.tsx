@@ -7,44 +7,39 @@ const fotos = [
 
 export default function ModKdizPage() {
   return (
-    <main className="min-h-screen bg-[#f8f6f2] px-6 py-20">
-      <div className="max-w-7xl mx-auto">
+    <main className="min-h-screen bg-white px-6 py-16">
+      <div className="max-w-6xl mx-auto">
 
-        <div className="text-center mb-20">
-          <span className="text-sm uppercase tracking-[0.35em] text-amber-700 font-medium">
-            BOA ESTRUCTURAS
-          </span>
+        <h1 className="text-5xl font-bold text-gray-900 mb-6">
+          KDIZ
+        </h1>
 
-          <h1 className="text-6xl font-black text-stone-900 mt-4 tracking-tight">
-            KDIZ
-          </h1>
+        <p className="text-lg text-gray-600 mb-12">
+          Modelo de parque infantil de madera KDIZ.
+        </p>
 
-          <div className="w-20 h-[3px] bg-amber-600 mx-auto mt-6 rounded-full" />
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-10 mb-20">
+        <div className="grid md:grid-cols-2 gap-8">
           {fotos.map((foto) => (
             <div
               key={foto}
-              className="overflow-hidden rounded-[2rem] shadow-xl bg-white"
+              className="overflow-hidden rounded-3xl shadow-2xl bg-white"
             >
               <img
                 src={foto}
                 alt="Modelo KDIZ"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
           ))}
         </div>
 
-        <div className="flex justify-center">
+        <div className="mt-16 flex justify-center">
           <a
             href="/fotos/madera/mod-kdiz/ficha-tecnica.pdf"
             target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-amber-700 hover:bg-amber-800 text-white px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 shadow-lg"
+            className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold transition"
           >
-            Ver ficha técnica
+            Descargar ficha técnica
           </a>
         </div>
 
