@@ -31,7 +31,7 @@ export default function ModKdizPage() {
               <img
                 src={foto}
                 alt="Modelo KDIZ"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
           ))}
