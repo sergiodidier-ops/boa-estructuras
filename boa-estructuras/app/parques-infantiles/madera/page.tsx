@@ -16,7 +16,7 @@ export default function MaderaPage() {
             BOA ESTRUCTURAS
           </span>
 
-          <h1 className="text-6xl font-black text-stone-900 mt-4 tracking-tight">
+          <h1 className="text-6xl font-black text-stone-900 mt-4">
             Serie Madera
           </h1>
 
@@ -28,18 +28,20 @@ export default function MaderaPage() {
             <a
               key={modelo.nombre}
               href={modelo.enlace}
-              className="bg-white rounded-[2rem] overflow-hidden shadow-xl hover:shadow-2xl transition duration-300"
+              className="group bg-white rounded-[2rem] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500"
             >
+
               <div className="overflow-hidden">
                 <img
                   src={modelo.imagen}
                   alt={modelo.nombre}
-                  className="w-full h-72 object-contain p-6"
+                  className="w-full h-72 object-cover group-hover:scale-105 transition duration-500"
                 />
               </div>
 
               <div className="p-8">
-                <span className="text-xs uppercase tracking-[0.3em] text-stone-500">
+
+                <span className="text-xs uppercase tracking-[0.3em] text-amber-700">
                   Serie
                 </span>
 
@@ -47,12 +49,14 @@ export default function MaderaPage() {
                   {modelo.nombre}
                 </h2>
 
-                <div className="w-14 h-[3px] bg-amber-600 rounded-full mt-4 mb-6"></div>
+                <div className="w-14 h-[3px] bg-amber-600 rounded-full mt-4"></div>
 
-                <span className="inline-block bg-green-500 text-white px-6 py-3 rounded-xl font-semibold">
-                  Solicitar información
+                <span className="inline-block bg-amber-700 text-white px-6 py-3 rounded-xl mt-8 font-semibold">
+                  Ver modelo
                 </span>
+
               </div>
+
             </a>
           ))}
         </div>

@@ -8,6 +8,7 @@ const fotos = [
 export default function ModKdizPage() {
   return (
     <main className="min-h-screen bg-white px-6 py-16">
+
       <div className="max-w-6xl mx-auto">
 
         <h1 className="text-5xl font-bold text-gray-900 mb-6">
@@ -19,6 +20,7 @@ export default function ModKdizPage() {
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
+
           {fotos.map((foto) => (
             <div
               key={foto}
@@ -27,13 +29,15 @@ export default function ModKdizPage() {
               <img
                 src={foto}
                 alt="Modelo KDIZ"
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
           ))}
+
         </div>
 
         <div className="mt-16 flex justify-center">
+
           <a
             href="/fotos/madera/mod-kdiz/ficha-tecnica.pdf"
             target="_blank"
@@ -41,9 +45,11 @@ export default function ModKdizPage() {
           >
             Descargar ficha técnica
           </a>
+
         </div>
 
       </div>
+
     </main>
   );
 }
