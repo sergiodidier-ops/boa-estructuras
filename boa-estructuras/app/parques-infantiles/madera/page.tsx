@@ -34,6 +34,16 @@ const modelos = [
   imagen: "/fotos/madera/mod-kli/portada.png",
   enlace: "/parques-infantiles/madera/mod-kli",
 },
+{
+  nombre: "KRTAGENA",
+  imagen: "/fotos/madera/mod-krtagena/portada.png",
+  enlace: "/parques-infantiles/madera/mod-krtagena",
+},
+{
+  nombre: "KRACAS",
+  imagen: "/fotos/madera/mod-kracas/portada.png",
+  enlace: "/parques-infantiles/madera/mod-kracas",
+},
 ];
 
 export default function MaderaPage() {
