@@ -59,6 +59,16 @@ const modelos = [
   imagen: "/fotos/madera/mod-ropes/portada.png",
   enlace: "/parques-infantiles/madera/mod-ropes",
 },
+{
+  nombre: "TCUERDAS",
+  imagen: "/fotos/madera/mod-tcuerdas/portada.png",
+  enlace: "/parques-infantiles/madera/mod-tcuerdas",
+},
+{
+  nombre: "CLIMB",
+  imagen: "/fotos/madera/mod-climb/portada.png",
+  enlace: "/parques-infantiles/madera/mod-climb",
+},
 ];
 
 export default function MaderaPage() {
