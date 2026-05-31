@@ -1,5 +1,5 @@
 const fotos = [
-  "/fotos/robinia/mod-rbn01/portada.PNG",
+  "/fotos/robinia/mod-rbn01/portada.png",
   "/fotos/robinia/mod-rbn01/mod-rbn01.png",
   "/fotos/robinia/mod-rbn01/mod-rbn01-aerea.png",
 ];
