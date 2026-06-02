@@ -39,13 +39,19 @@ const modelos: Modelo[] = [
   nombre: "RBN07",
   imagen: "/fotos/robinia/mod-rbn07/portada.png",
   enlace: "/parques-infantiles/robinia/mod-rbn07",
-}
+},
 {
   nombre: "RBN08",
   imagen: "/fotos/robinia/mod-rbn08/portada.png",
   enlace: "/parques-infantiles/robinia/mod-rbn08",
 },
+{
+  nombre: "RBN09",
+  imagen: "/fotos/robinia/mod-rbn09/portada.png",
+  enlace: "/parques-infantiles/robinia/mod-rbn09",
+}
 ];
+
 
 
 export default function RobiniaPage() {
