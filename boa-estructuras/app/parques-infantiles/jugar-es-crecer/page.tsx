@@ -3,8 +3,13 @@ type Modelo = {
   imagen: string;
   enlace: string;
 };
-
-const modelos: Modelo[] = [];
+const modelos: Modelo[] = [
+  {
+    nombre: "CASTAÑO",
+    imagen: "/fotos/jugar-es-crecer/mod-castaño/portada.png",
+    enlace: "/parques-infantiles/jugar-es-crecer/mod-castaño",
+  },
+];
 
 export default function JugarEsCrecerPage() {
   return (
