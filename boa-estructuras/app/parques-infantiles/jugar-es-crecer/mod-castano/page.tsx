@@ -1,8 +1,8 @@
 export default function ModCastanoPage() {
   const fotos = [
-    "/fotos/jugar-es-crecer/mod-castaño/portada.png",
-    "/fotos/jugar-es-crecer/mod-castaño/mod-castaño.png",
-    "/fotos/jugar-es-crecer/mod-castaño/mod-castaño-aerea.png",
+    "/fotos/jugar-es-crecer/mod-castano/portada.png",
+    "/fotos/jugar-es-crecer/mod-castano/mod-castaño.png",
+    "/fotos/jugar-es-crecer/mod-castano/mod-castaño-aerea.png",
   ];
 
   return (
