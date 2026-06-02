@@ -35,6 +35,16 @@ const modelos: Modelo[] = [
   imagen: "/fotos/robinia/mod-rbn06/portada.png",
   enlace: "/parques-infantiles/robinia/mod-rbn06",
 },
+{
+  nombre: "RBN07",
+  imagen: "/fotos/robinia/mod-rbn07/portada.png",
+  enlace: "/parques-infantiles/robinia/mod-rbn07",
+}
+{
+  nombre: "RBN08",
+  imagen: "/fotos/robinia/mod-rbn08/portada.png",
+  enlace: "/parques-infantiles/robinia/mod-rbn08",
+},
 ];
 
 
