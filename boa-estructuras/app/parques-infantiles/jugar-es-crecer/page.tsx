@@ -7,7 +7,7 @@ const modelos: Modelo[] = [
   {
     nombre: "CASTAÑO",
     imagen: "/fotos/jugar-es-crecer/mod-castano/portada.png",
-    enlace: "/parques-infantiles/jugar-es-crecer/mod-castaño",
+    enlace: "/parques-infantiles/jugar-es-crecer/mod-castano",
   },
 ];
 
