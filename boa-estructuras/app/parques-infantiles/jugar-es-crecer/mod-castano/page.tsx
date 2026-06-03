@@ -28,7 +28,7 @@ export default function ModCastanoPage() {
             >
               <img
                 src={foto}
-                alt="Modelo Castaño"
+                alt="Modelo Castano"
                 className="w-full rounded-2xl object-contain"
               />
             </div>
@@ -37,7 +37,7 @@ export default function ModCastanoPage() {
 
         <div className="mt-12 text-center">
           <a
-            href="/fotos/jugar-es-crecer/mod-castaño/ficha-tecnica.pdf"
+            href="/fotos/jugar-es-crecer/mod-castano/ficha-tecnica.pdf"
             target="_blank"
             className="inline-flex bg-[#2f8f7a] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#257261]"
           >
