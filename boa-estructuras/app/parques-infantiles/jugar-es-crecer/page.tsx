@@ -23,7 +23,17 @@ const modelos: Modelo[] = [
   nombre: "HAYA",
   imagen: "/fotos/jugar-es-crecer/mod-haya/portada.png",
   enlace: "/parques-infantiles/jugar-es-crecer/mod-haya",
-}
+},
+{
+  nombre: "ROBLE",
+  imagen: "/fotos/jugar-es-crecer/mod-roble/portada.png",
+  enlace: "/parques-infantiles/jugar-es-crecer/mod-roble",
+},
+{
+  nombre: "PINO",
+  imagen: "/fotos/jugar-es-crecer/mod-pino/portada.png",
+  enlace: "/parques-infantiles/jugar-es-crecer/mod-pino",
+},
 ];
 
 export default function JugarEsCrecerPage() {
