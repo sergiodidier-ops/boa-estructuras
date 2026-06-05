@@ -1,57 +1,15 @@
-type Modelo = {
-  nombre: string;
-  imagen: string;
-  enlace: string;
-};
-
-const columpios: Modelo[] = [];
-
-const muelles: Modelo[] = [];
-
-function CardModelo({ modelo }: { modelo: Modelo }) {
-  return (
-    <a
-      href={modelo.enlace}
-      className="group bg-white rounded-[2rem] overflow-hidden shadow-xl hover:shadow-2xl border border-slate-100 transition duration-300"
-    >
-      <div className="bg-gradient-to-b from-[#f4fbff] to-[#f8fafc] p-6">
-        <img
-          src={modelo.imagen}
-          alt={modelo.nombre}
-          className="w-full h-72 object-contain group-hover:scale-105 transition duration-500"
-        />
-      </div>
-
-      <div className="p-8">
-        <span className="text-xs uppercase tracking-[0.3em] text-sky-700">
-          Serie Independiente
-        </span>
-
-        <h3 className="text-3xl font-black text-[#23415a] mt-3">
-          {modelo.nombre}
-        </h3>
-
-        <div className="w-14 h-[3px] bg-sky-500 rounded-full mt-4"></div>
-
-        <span className="inline-block mt-8 bg-[#23415a] hover:bg-[#172c3d] text-white px-6 py-3 rounded-xl font-semibold transition">
-          Ver modelo
-        </span>
-      </div>
-    </a>
-  );
-}
-
 export default function IndependientePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#f4fbff] via-white to-[#f7fafc] px-6 py-20">
+    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-100 px-6 py-20">
       <div className="max-w-7xl mx-auto">
 
+        {/* Cabecera */}
         <div className="text-center mb-24">
           <span className="uppercase tracking-[0.45em] text-sky-700 font-semibold text-sm">
             ELEMENTOS INDIVIDUALES
           </span>
 
-          <h1 className="text-7xl lg:text-8xl font-black text-[#23415a] mt-6 tracking-tight">
+          <h1 className="text-7xl lg:text-8xl font-black text-[#24345d] mt-6">
             INDEPENDIENTE
           </h1>
 
@@ -63,31 +21,48 @@ export default function IndependientePage() {
           </p>
         </div>
 
-        <section>
-          <h2 className="text-5xl font-black text-[#23415a]">
-            Columpios
-          </h2>
-          <div className="w-24 h-1 bg-sky-500 rounded-full mt-4 mb-10"></div>
+        {/* Categorías */}
+        <div className="max-w-4xl mx-auto space-y-24">
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {columpios.map((modelo) => (
-              <CardModelo key={modelo.nombre} modelo={modelo} />
-            ))}
-          </div>
-        </section>
+          {/* COLUMPIOS */}
+          <section>
+            <a
+              href="/parques-infantiles/independiente/columpios"
+              className="group block"
+            >
+              <h2 className="text-5xl lg:text-6xl font-black text-[#24345d] group-hover:text-sky-600 transition">
+                Columpios
+              </h2>
 
-        <section className="mt-28">
-          <h2 className="text-5xl font-black text-[#23415a]">
-            Muelles
-          </h2>
-          <div className="w-24 h-1 bg-emerald-500 rounded-full mt-4 mb-10"></div>
+              <div className="w-24 h-1 bg-sky-500 rounded-full mt-4 group-hover:w-40 transition-all duration-300"></div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {muelles.map((modelo) => (
-              <CardModelo key={modelo.nombre} modelo={modelo} />
-            ))}
-          </div>
-        </section>
+              <p className="mt-6 text-lg text-slate-600">
+                Columpios individuales y múltiples para parques infantiles,
+                colegios y espacios públicos.
+              </p>
+            </a>
+          </section>
+
+          {/* MUELLES */}
+          <section>
+            <a
+              href="/parques-infantiles/independiente/muelles"
+              className="group block"
+            >
+              <h2 className="text-5xl lg:text-6xl font-black text-[#24345d] group-hover:text-emerald-600 transition">
+                Muelles
+              </h2>
+
+              <div className="w-24 h-1 bg-emerald-500 rounded-full mt-4 group-hover:w-40 transition-all duration-300"></div>
+
+              <p className="mt-6 text-lg text-slate-600">
+                Juegos de muelle diseñados para fomentar el equilibrio,
+                la coordinación y la diversión de los más pequeños.
+              </p>
+            </a>
+          </section>
+
+        </div>
 
       </div>
     </main>
