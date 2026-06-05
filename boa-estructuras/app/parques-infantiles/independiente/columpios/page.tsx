@@ -10,6 +10,11 @@ const modelos: Modelo[] = [
     imagen: "/fotos/independiente/columpios/col-metal-duo/portada.png",
     enlace: "/parques-infantiles/independiente/columpios/col-metal-duo",
   },
+  {
+  nombre: "COL-METAL-CESTA",
+  imagen: "/fotos/independiente/columpios/col-metal-cesta/portada.png",
+  enlace: "/parques-infantiles/independiente/columpios/col-metal-cesta",
+},
 ];
 
 export default function ColumpiosPage() {
