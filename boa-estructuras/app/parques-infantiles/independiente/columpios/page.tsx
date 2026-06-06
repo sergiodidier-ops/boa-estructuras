@@ -37,8 +37,8 @@ const modelos: Modelo[] = [
 },
 {
   nombre: "COL-AD",
-  imagen: "/fotos/independiente/columpios/col-as/portada.png",
-  enlace: "/parques-infantiles/independiente/columpios/col-as",
+  imagen: "/fotos/independiente/columpios/col-ad/portada.png",
+  enlace: "/parques-infantiles/independiente/columpios/col-ad",
 },
 ];
 
