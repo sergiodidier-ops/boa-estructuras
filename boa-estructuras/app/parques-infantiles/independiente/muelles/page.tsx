@@ -9,6 +9,21 @@ const modelos = [
     imagen: "/fotos/independiente/muelles/mod-balmet-duo/portada.png",
     enlace: "/parques-infantiles/independiente/muelles/mod-balmet-duo",
   },
+  {
+    nombre: "MOD-BALBAR",
+    imagen: "/fotos/independiente/muelles/mod-balbar/portada.jpg",
+    enlace: "/parques-infantiles/independiente/muelles/mod-balbar",
+  },
+  {
+  nombre: "MOD-BALMAD",
+  imagen: "/fotos/independiente/muelles/mod-balmad/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-balmad",
+},
+{
+  nombre: "MOD-RBNBAL",
+  imagen: "/fotos/independiente/muelles/mod-rbnbal/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-rbnbal",
+},
 ];
 
 export default function MuellesPage() {
