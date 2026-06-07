@@ -17,7 +17,7 @@ export default function RbnColPage() {
 
         <div className="bg-white rounded-3xl shadow-xl p-8">
           <img
-            src="/fotos/independiente/columpios/rbn-col/portada.PNG"
+            src="/fotos/independiente/columpios/rbn-col/portada.png"
             alt="RBN-COL"
             className="w-full rounded-2xl object-contain"
           />
