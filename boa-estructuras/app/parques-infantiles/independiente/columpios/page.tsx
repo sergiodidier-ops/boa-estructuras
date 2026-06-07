@@ -40,6 +40,16 @@ const modelos: Modelo[] = [
   imagen: "/fotos/independiente/columpios/col-ad/portada.png",
   enlace: "/parques-infantiles/independiente/columpios/col-ad",
 },
+{
+  nombre: "COL-MIXTO",
+  imagen: "/fotos/independiente/columpios/col-mixto/portada.png",
+  enlace: "/parques-infantiles/independiente/columpios/col-mixto",
+},
+{
+  nombre: "COLHEX",
+  imagen: "/fotos/independiente/columpios/colhex/portada.png",
+  enlace: "/parques-infantiles/independiente/columpios/colhex",
+},
 ];
 
 export default function ColumpiosPage() {
