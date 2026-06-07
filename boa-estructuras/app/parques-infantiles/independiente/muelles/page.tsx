@@ -24,6 +24,11 @@ const modelos = [
   imagen: "/fotos/independiente/muelles/mod-rbnbal/portada.png",
   enlace: "/parques-infantiles/independiente/muelles/mod-rbnbal",
 },
+{
+  nombre: "MOD-KAR",
+  imagen: "/fotos/independiente/muelles/mod-kar/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-kar",
+},
 ];
 
 export default function MuellesPage() {

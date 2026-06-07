@@ -60,6 +60,11 @@ const modelos: Modelo[] = [
   imagen: "/fotos/independiente/columpios/coleq/portada.png",
   enlace: "/parques-infantiles/independiente/columpios/coleq",
 },
+{
+  nombre: "RBN-COL",
+  imagen: "/fotos/independiente/columpios/rbn-col/portada.PNG",
+  enlace: "/parques-infantiles/independiente/columpios/rbn-col",
+},
 ];
 
 export default function ColumpiosPage() {
