@@ -34,6 +34,27 @@ const modelos = [
   imagen: "/fotos/independiente/muelles/mod-bom/portada.jpg",
   enlace: "/parques-infantiles/independiente/muelles/mod-bom",
 },
+{
+  nombre: "MOD-MUPE",
+  imagen: "/fotos/independiente/muelles/mod-mupe/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-mupe",
+},
+{
+  nombre: "MOD-MOTO",
+  imagen: "/fotos/independiente/muelles/mod-moto/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-moto",
+},
+{
+  nombre: "MOD-DRAK",
+  imagen: "/fotos/independiente/muelles/mod-drak/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-drak",
+},
+{
+  nombre: "MOD-HOURSE",
+  imagen: "/fotos/independiente/muelles/mod-hourse/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-hourse",
+},
+          
 ];
 
 export default function MuellesPage() {

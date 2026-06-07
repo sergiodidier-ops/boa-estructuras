@@ -62,7 +62,7 @@ const modelos: Modelo[] = [
 },
 {
   nombre: "RBN-COL",
-  imagen: "/fotos/independiente/columpios/rbn-col/portada.PNG",
+  imagen: "/fotos/independiente/columpios/rbn-col/portada.png",
   enlace: "/parques-infantiles/independiente/columpios/rbn-col",
 },
 ];
