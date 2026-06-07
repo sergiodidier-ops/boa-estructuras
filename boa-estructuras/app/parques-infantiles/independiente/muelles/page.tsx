@@ -1,0 +1,71 @@
+const modelos = [
+  {
+    nombre: "MOD-BALMET",
+    imagen: "/fotos/independiente/muelles/mod-balmet/portada.png",
+    enlace: "/parques-infantiles/independiente/muelles/mod-balmet",
+  },
+   {
+    nombre: "MOD-BALMET-DUO",
+    imagen: "/fotos/independiente/muelles/mod-balmet-duo/portada.png",
+    enlace: "/parques-infantiles/independiente/muelles/mod-balmet-duo",
+  },
+];
+
+export default function MuellesPage() {
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-[#fff7e8] via-[#f8fbff] to-white px-6 py-20">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-20">
+          <span className="uppercase tracking-[0.4em] text-green-700 text-sm font-semibold">
+            Serie Independiente
+          </span>
+
+          <h1 className="text-7xl font-black text-[#2f3d58] mt-4">
+            MUELLES
+          </h1>
+
+          <div className="w-32 h-1 bg-green-500 mx-auto mt-6 rounded-full"></div>
+
+          <p className="mt-8 text-xl text-slate-600 max-w-3xl mx-auto">
+            Juegos de muelle diseñados para parques infantiles,
+            colegios y espacios recreativos.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {modelos.map((modelo) => (
+            <div
+              key={modelo.nombre}
+              className="bg-white rounded-3xl shadow-xl overflow-hidden"
+            >
+              <img
+                src={modelo.imagen}
+                alt={modelo.nombre}
+                className="w-full h-72 object-contain p-6"
+              />
+
+              <div className="p-8">
+                <span className="uppercase tracking-[0.3em] text-slate-400 text-xs">
+                  Serie Independiente
+                </span>
+
+                <h2 className="text-3xl font-black text-[#2f3d58] mt-3">
+                  {modelo.nombre}
+                </h2>
+
+                <div className="w-16 h-1 bg-green-500 rounded-full mt-4"></div>
+
+                <a
+                  href={modelo.enlace}
+                  className="inline-block mt-8 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition"
+                >
+                  Ver modelo
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+}
