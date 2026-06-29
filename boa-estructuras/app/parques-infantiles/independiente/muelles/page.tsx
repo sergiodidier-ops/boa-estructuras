@@ -79,6 +79,16 @@ const modelos = [
   imagen: "/fotos/independiente/muelles/mod-rana/portada.png",
   enlace: "/parques-infantiles/independiente/muelles/mod-rana",
 },
+{
+  nombre: "MOD-OCTOPUS",
+  imagen: "/fotos/independiente/muelles/mod-octopus/portada.jpg",
+  enlace: "/parques-infantiles/independiente/muelles/mod-octopus",
+},
+{
+  nombre: "MOD-MU",
+  imagen: "/fotos/independiente/muelles/mod-mu/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-mu",
+},
           
 ];
 
