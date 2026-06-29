@@ -63,10 +63,21 @@ const modelos = [
   nombre: "MOD-JIRAFA",
   imagen: "/fotos/independiente/muelles/mod-jirafa/portada.png",
   enlace: "/parques-infantiles/independiente/muelles/mod-jirafa",
-},{
+},
+{
   nombre: "MOD-FLOR",
   imagen: "/fotos/independiente/muelles/mod-flor/portada.png",
   enlace: "/parques-infantiles/independiente/muelles/mod-flor",
+},
+{
+  nombre: "MOD-MARYP",
+  imagen: "/fotos/independiente/muelles/mod-maryp/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-maryp",
+},
+{
+  nombre: "MOD-RANA",
+  imagen: "/fotos/independiente/muelles/mod-rana/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-rana",
 },
           
 ];
