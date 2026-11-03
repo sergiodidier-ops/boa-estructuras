@@ -99,6 +99,66 @@ const modelos = [
   imagen: "/fotos/independiente/muelles/mod-erizo/portada.png",
   enlace: "/parques-infantiles/independiente/muelles/mod-erizo",
 },
+{
+  nombre: "MOD-KOALA",
+  imagen: "/fotos/independiente/muelles/mod-koala/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-koala",
+},
+{
+  nombre: "MOD-BOAT",
+  imagen: "/fotos/independiente/muelles/mod-boat/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-boat",
+},
+{
+  nombre: "MOD-COHETE",
+  imagen: "/fotos/independiente/muelles/mod-cohete/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-cohete",
+},
+{
+  nombre: "MOD-AVOCADO",
+  imagen: "/fotos/independiente/muelles/mod-avocado/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-avocado",
+},
+{
+  nombre: "MOD-HIPO",
+  imagen: "/fotos/independiente/muelles/mod-hipo/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-hipo",
+},
+{
+  nombre: "MOD-POMETA",
+  imagen: "/fotos/independiente/muelles/mod-pometa/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-pometa",
+},
+{
+  nombre: "MOD-CARROT",
+  imagen: "/fotos/independiente/muelles/mod-carrot/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-carrot",
+},
+{
+  nombre: "MOD-PERA",
+  imagen: "/fotos/independiente/muelles/mod-pera/MOD-PERA.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-pera",
+},
+{
+  nombre: "MOD-PLATANO",
+  imagen: "/fotos/independiente/muelles/mod-platano/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-platano",
+},
+{
+  nombre: "MOD-FLORET",
+  imagen: "/fotos/independiente/muelles/mod-floret/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-floret",
+},
+{
+  nombre: "MOD-GHOST",
+  imagen: "/fotos/independiente/muelles/mod-ghost/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-ghost",
+},
+{
+  nombre: "MOD-DELFIN",
+  imagen: "/fotos/independiente/muelles/mod-delfin/portada.png",
+  enlace: "/parques-infantiles/independiente/muelles/mod-delfin",
+},
           
 ];
 

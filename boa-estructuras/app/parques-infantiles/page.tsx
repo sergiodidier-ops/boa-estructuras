@@ -26,11 +26,7 @@ export default function ParquesInfantiles() {
     descripcion: "Columpios, balancines y elementos sueltos de juego infantil.",
     enlace: "/parques-infantiles/independiente",
   },
-  {
-  nombre: "RBN08",
-  imagen: "/fotos/robinia/mod-rbn08/portada.png",
-  enlace: "/parques-infantiles/robinia/mod-rbn08",
-},
+
   ]
   return (
     <main className="min-h-screen bg-white px-6 py-16">
