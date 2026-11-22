@@ -3,7 +3,10 @@ import type { MetadataRoute } from "next";
 
 const baseUrl = "https://www.boaestructuras.es";
 
-// Páginas principales
+// ==========================================
+// PAGINAS PRINCIPALES
+// ==========================================
+
 const principales = [
   "",
   "/parques-infantiles",
@@ -13,8 +16,11 @@ const principales = [
   "/proyectos",
 ];
 
-// Categorías de parques infantiles
-const categorias = [
+// ==========================================
+// CATEGORIAS DE PARQUES INFANTILES
+// ==========================================
+
+const categoriasParques = [
   "/parques-infantiles/metal",
   "/parques-infantiles/madera",
   "/parques-infantiles/robinia",
@@ -24,7 +30,30 @@ const categorias = [
   "/parques-infantiles/independiente/muelles",
 ];
 
-// 20 modelos metálicos
+// ==========================================
+// CATEGORIAS DE CERRAMIENTOS
+// ==========================================
+
+const categoriasCerramientos = [
+  "/cerramientos/deportivos",
+  "/cerramientos/vallados",
+  "/cerramientos/barandillas",
+];
+
+// ==========================================
+// CATEGORIAS DE DEPORTE
+// ==========================================
+
+const categoriasDeporte = [
+  "/deporte/pistas-deportivas",
+  "/deporte/workout",
+  "/deporte/elementos-deportivos",
+];
+
+// ==========================================
+// PARQUES INFANTILES METAL - 20 MODELOS
+// ==========================================
+
 const metal = [
   "mod-ksa-roco",
   "mod-torreroko",
@@ -48,7 +77,10 @@ const metal = [
   "mod-krdiff",
 ];
 
-// 14 modelos de madera
+// ==========================================
+// PARQUES INFANTILES MADERA - 14 MODELOS
+// ==========================================
+
 const madera = [
   "mod-kdiz",
   "mod-kstellon",
@@ -66,7 +98,10 @@ const madera = [
   "mod-climb",
 ];
 
-// 12 modelos de robinia
+// ==========================================
+// PARQUES INFANTILES ROBINIA - 12 MODELOS
+// ==========================================
+
 const robinia = [
   "mod-rbn01",
   "mod-rbn02",
@@ -82,7 +117,10 @@ const robinia = [
   "mod-barcomad",
 ];
 
-// 6 modelos Jugar es Crecer
+// ==========================================
+// JUGAR ES CRECER - 6 MODELOS
+// ==========================================
+
 const jugarEsCrecer = [
   "mod-castano",
   "mod-jungle",
@@ -92,7 +130,10 @@ const jugarEsCrecer = [
   "mod-pino",
 ];
 
-// 12 modelos de columpios
+// ==========================================
+// COLUMPIOS - 12 MODELOS
+// ==========================================
+
 const columpios = [
   "col-metal-duo",
   "col-metal-cesta",
@@ -108,7 +149,10 @@ const columpios = [
   "rbn-col",
 ];
 
-// 32 modelos de muelles
+// ==========================================
+// MUELLES - 32 MODELOS
+// ==========================================
+
 const muelles = [
   "mod-balmet",
   "mod-balmet-duo",
@@ -144,35 +188,168 @@ const muelles = [
   "mod-delfin",
 ];
 
+// ==========================================
+// CERRAMIENTOS DEPORTIVOS - 3 MODELOS
+// ==========================================
+
+const cerramientosDeportivos = [
+  "boa128",
+  "boa129",
+  "boa130",
+];
+
+// ==========================================
+// VALLADOS METALICOS - 6 MODELOS
+// ==========================================
+
+const vallados = [
+  "boa131",
+  "boa132",
+  "boa133",
+  "boa134",
+  "boa135",
+  "boa136",
+];
+
+// ==========================================
+// BARANDILLAS METALICAS - 4 MODELOS
+// ==========================================
+
+const barandillas = [
+  "boa137",
+  "boa138",
+  "boa139",
+  "boa140",
+];
+
+// ==========================================
+// MOBILIARIO URBANO - 10 MODELOS
+// ==========================================
+
+const mobiliario = [
+  "boa107",
+  "boa108",
+  "boa109",
+  "boa110",
+  "boa111",
+  "boa112",
+  "boa113",
+  "boa114",
+  "boa115",
+  "boa116",
+];
+
+// ==========================================
+// PISTAS DEPORTIVAS - 3 MODELOS
+// ==========================================
+
+const pistasDeportivas = [
+  "boa117",
+  "boa118",
+  "boa119",
+];
+
+// ==========================================
+// WORKOUT Y CALISTENIA - 5 MODELOS
+// ==========================================
+
+const workout = [
+  "boa122",
+  "boa123",
+  "boa124",
+  "boa125",
+  "boa126",
+];
+
+// ==========================================
+// RUTAS DE TODOS LOS PRODUCTOS
+// ==========================================
+
 const rutasProductos = [
+  // Parques infantiles metálicos
   ...metal.map(
     (id) => `/parques-infantiles/metal/${id}`
   ),
+
+  // Parques infantiles de madera
   ...madera.map(
     (id) => `/parques-infantiles/madera/${id}`
   ),
+
+  // Parques infantiles de robinia
   ...robinia.map(
     (id) => `/parques-infantiles/robinia/${id}`
   ),
+
+  // Jugar es crecer
   ...jugarEsCrecer.map(
     (id) => `/parques-infantiles/jugar-es-crecer/${id}`
   ),
+
+  // Columpios
   ...columpios.map(
-    (id) => `/parques-infantiles/independiente/columpios/${id}`
+    (id) =>
+      `/parques-infantiles/independiente/columpios/${id}`
   ),
+
+  // Muelles
   ...muelles.map(
-    (id) => `/parques-infantiles/independiente/muelles/${id}`
+    (id) =>
+      `/parques-infantiles/independiente/muelles/${id}`
+  ),
+
+  // Cerramientos deportivos
+  ...cerramientosDeportivos.map(
+    (id) => `/cerramientos/deportivos/${id}`
+  ),
+
+  // Vallados metálicos
+  ...vallados.map(
+    (id) => `/cerramientos/vallados/${id}`
+  ),
+
+  // Barandillas metálicas
+  ...barandillas.map(
+    (id) => `/cerramientos/barandillas/${id}`
+  ),
+
+  // Mobiliario urbano
+  ...mobiliario.map(
+    (id) => `/mobiliario/${id}`
+  ),
+
+  // Pistas deportivas
+  ...pistasDeportivas.map(
+    (id) => `/deporte/pistas-deportivas/${id}`
+  ),
+
+  // Workout y calistenia
+  ...workout.map(
+    (id) => `/deporte/workout/${id}`
   ),
 ];
 
+// ==========================================
+// SITEMAP COMPLETO
+// ==========================================
+
 export default function sitemap(): MetadataRoute.Sitemap {
+  const categorias = [
+    ...categoriasParques,
+    ...categoriasCerramientos,
+    ...categoriasDeporte,
+  ];
+
   const rutas = [
     ...principales,
     ...categorias,
     ...rutasProductos,
   ];
 
-  return rutas.map((ruta) => ({
+  // Evita que una misma URL aparezca dos veces
+  const rutasUnicas = [...new Set(rutas)];
+
+  return rutasUnicas.map((ruta) => ({
     url: `${baseUrl}${ruta}`,
     changeFrequency: "monthly",
     priority:
