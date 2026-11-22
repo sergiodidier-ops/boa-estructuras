@@ -7,22 +7,20 @@ const baseUrl = "https://www.boaestructuras.es";
 const telefono = "34676208656";
 
 export const metadata: Metadata = {
-  title:
-    "Fabricantes de Parques Infantiles y Estructuras Metálicas | BOA",
+  title: "Carpintería Metálica en Valencia | BOA Estructuras",
   description:
-    "BOA Estructuras: fabricantes de parques infantiles y estructuras metálicas en Valencia. Carpintería metálica, vallados, barandillas, mobiliario urbano y equipamiento deportivo a medida.",
+    "BOA Estructuras, especialistas en carpintería metálica en Valencia. Fabricación a medida de vallados, puertas, rejas, barandillas, escaleras, cerramientos y parques infantiles.",
   alternates: {
     canonical: baseUrl,
   },
   openGraph: {
-    title:
-      "BOA Estructuras | Parques Infantiles y Estructuras Metálicas",
+    title: "BOA Estructuras | Carpintería Metálica en Valencia",
     description:
-      "Fabricación de parques infantiles, estructuras de acero, cerramientos, barandillas, mobiliario urbano y equipamiento deportivo en Valencia.",
+      "Fabricación de carpintería metálica a medida para constructoras, empresas, ayuntamientos y particulares. Vallados, barandillas, puertas, rejas y estructuras de acero.",
     url: baseUrl,
     siteName: "BOA Estructuras",
-    locale: "es_ES",
     type: "website",
+    locale: "es_ES",
   },
   robots: {
     index: true,
@@ -39,76 +37,90 @@ const fotos = [
   "/fotos/IMG_4109.jpeg",
 ];
 
-const categorias = [
-  {
-    titulo: "Parques infantiles",
-    descripcion: "Fabricación de equipamiento para zonas de juego",
-    enlace: "/parques-infantiles",
-  },
-  {
-    titulo: "Estructuras metálicas",
-    descripcion: "Fabricación metálica y proyectos a medida",
-    enlace: "/proyectos",
-  },
-  {
-    titulo: "Cerramientos",
-    descripcion: "Vallados, barandillas y cerramientos deportivos",
-    enlace: "/cerramientos",
-  },
-  {
-    titulo: "Mobiliario urbano",
-    descripcion: "Bancos, papeleras, mesas y vallas infantiles",
-    enlace: "/mobiliario",
-  },
-  {
-    titulo: "Equipamiento deportivo",
-    descripcion: "Pistas deportivas y parques de calistenia",
-    enlace: "/deporte",
-  },
-];
-
 const servicios = [
   {
-    titulo: "Fabricación de parques infantiles",
+    nombre: "Vallados y cerramientos metálicos",
     descripcion:
-      "Diseño y fabricación de parques infantiles metálicos, de madera y robinia, columpios, muelles y conjuntos de juego.",
-    enlace: "/parques-infantiles",
-    boton: "Ver parques infantiles",
+      "Fabricación de vallas metálicas, cerramientos perimetrales, mallas electrosoldadas y vallados para instalaciones industriales, deportivas y municipales.",
+    enlace: "/cerramientos/vallados",
+    boton: "Ver vallados",
   },
   {
-    titulo: "Fabricación de estructuras metálicas",
+    nombre: "Barandillas metálicas",
     descripcion:
-      "Trabajos de carpintería metálica, estructuras de acero, bastidores, soportes y conjuntos metálicos fabricados según planos y medidas.",
-    enlace: "/proyectos",
-    boton: "Ver proyectos",
-  },
-  {
-    titulo: "Vallados y cerramientos metálicos",
-    descripcion:
-      "Fabricación de cerramientos perimetrales, vallas metálicas, malla electrosoldada y soluciones para instalaciones deportivas.",
-    enlace: "/cerramientos",
-    boton: "Ver cerramientos",
-  },
-  {
-    titulo: "Barandillas y protecciones metálicas",
-    descripcion:
-      "Barandillas, protecciones peatonales y elementos metálicos para espacios públicos, edificios y proyectos de construcción.",
+      "Fabricación de barandillas de acero, protecciones peatonales y elementos de seguridad metálicos según las características técnicas de cada proyecto.",
     enlace: "/cerramientos/barandillas",
     boton: "Ver barandillas",
   },
   {
-    titulo: "Mobiliario urbano",
+    nombre: "Puertas, rejas y escaleras metálicas",
     descripcion:
-      "Fabricación de bancos de madera y acero, papeleras, mesas de picnic y elementos de equipamiento urbano.",
-    enlace: "/mobiliario",
-    boton: "Ver mobiliario",
+      "Trabajos de carpintería metálica a medida para viviendas, edificios, empresas y obras de construcción. Estudiamos planos, medidas y acabados.",
+    enlace: "/proyectos",
+    boton: "Ver proyectos",
   },
   {
-    titulo: "Equipamiento deportivo y calistenia",
+    nombre: "Estructuras metálicas a medida",
     descripcion:
-      "Pistas multideporte, estructuras de workout, parques de calistenia y equipamiento para espacios deportivos.",
+      "Fabricación de bastidores, soportes, estructuras tubulares y conjuntos de acero adaptados a las dimensiones y especificaciones de cada trabajo.",
+    enlace: "/proyectos",
+    boton: "Ver trabajos",
+  },
+  {
+    nombre: "Cerramientos deportivos",
+    descripcion:
+      "Fabricación de cerramientos y elementos metálicos para pistas deportivas, colegios, instalaciones municipales y espacios exteriores.",
+    enlace: "/cerramientos/deportivos",
+    boton: "Ver cerramientos deportivos",
+  },
+  {
+    nombre: "Parques infantiles",
+    descripcion:
+      "Diseño y fabricación de parques infantiles metálicos, de madera y robinia, conjuntos multijuego, columpios y otros elementos infantiles.",
+    enlace: "/parques-infantiles",
+    boton: "Ver parques infantiles",
+  },
+  {
+    nombre: "Mobiliario urbano",
+    descripcion:
+      "Fabricación de bancos urbanos, papeleras, mesas de picnic y equipamiento para parques, jardines y espacios públicos.",
+    enlace: "/mobiliario",
+    boton: "Ver mobiliario urbano",
+  },
+  {
+    nombre: "Equipamiento deportivo y calistenia",
+    descripcion:
+      "Fabricación de pistas deportivas, estructuras de street workout y parques de calistenia para instalaciones exteriores.",
     enlace: "/deporte",
     boton: "Ver equipamiento deportivo",
+  },
+];
+
+const accesos = [
+  {
+    nombre: "Carpintería metálica",
+    descripcion: "Fabricación a medida",
+    enlace: "#carpinteria-metalica",
+  },
+  {
+    nombre: "Cerramientos",
+    descripcion: "Vallados y barandillas",
+    enlace: "/cerramientos",
+  },
+  {
+    nombre: "Proyectos",
+    descripcion: "Trabajos realizados",
+    enlace: "/proyectos",
+  },
+  {
+    nombre: "Parques infantiles",
+    descripcion: "Fabricación de juegos",
+    enlace: "/parques-infantiles",
+  },
+  {
+    nombre: "Deporte y mobiliario",
+    descripcion: "Equipamiento exterior",
+    enlace: "/deporte",
   },
 ];
 
@@ -120,13 +132,9 @@ export default function Home() {
     url: baseUrl,
     logo: `${baseUrl}/logo/logo.png`,
     description:
-      "Fabricación de parques infantiles, estructuras metálicas, cerramientos, mobiliario urbano y equipamiento deportivo.",
+      "Empresa de carpintería metálica en Valencia especializada en fabricación de vallados, barandillas, cerramientos, puertas, estructuras metálicas y parques infantiles.",
     telephone: "+34 676 208 656",
     email: "administracion@boaestructuras.es",
-    areaServed: {
-      "@type": "AdministrativeArea",
-      name: "Valencia",
-    },
   };
 
   return (
@@ -148,7 +156,7 @@ export default function Home() {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo/logo.png"
-              alt="Logotipo de BOA Estructuras"
+              alt="BOA Estructuras"
               width={55}
               height={55}
             />
@@ -162,6 +170,13 @@ export default function Home() {
             aria-label="Navegación principal"
             className="hidden gap-7 font-semibold text-gray-700 md:flex"
           >
+            <a
+              href="#carpinteria-metalica"
+              className="hover:text-blue-900"
+            >
+              Carpintería metálica
+            </a>
+
             <a href="#servicios" className="hover:text-blue-900">
               Servicios
             </a>
@@ -190,13 +205,13 @@ export default function Home() {
         </div>
       </header>
 
-      {/* PORTADA PRINCIPAL SEO */}
+      {/* PORTADA PRINCIPAL */}
 
       <section className="relative flex min-h-screen items-center overflow-hidden bg-blue-950 px-6 pt-28 text-white">
         <div className="absolute inset-0">
           <Image
             src="/fotos/IMG_4104.jpeg"
-            alt="Proyecto de BOA Estructuras"
+            alt="Proyecto de fabricación de BOA Estructuras"
             fill
             priority
             sizes="100vw"
@@ -210,31 +225,40 @@ export default function Home() {
           <div className="max-w-4xl">
             <Image
               src="/logo/logo.PNG"
-              alt="BOA Estructuras"
+              alt="Logotipo de BOA Estructuras"
               width={170}
               height={170}
               className="mb-8 rounded-2xl bg-white/90 p-3 shadow-2xl"
             />
 
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-green-400 md:tracking-[0.35em]">
-              Diseño · Fabricación · Instalación
+              DISEÑO · FABRICACIÓN · INSTALACIÓN
             </p>
 
             <h1 className="text-4xl font-black leading-tight tracking-tight sm:text-5xl md:text-7xl">
-              Fabricantes de Parques Infantiles y Estructuras Metálicas en Valencia
+              Carpintería Metálica en Valencia
+              <span className="mt-3 block text-green-400">
+                Fabricación a Medida
+              </span>
             </h1>
 
             <p className="mt-8 max-w-3xl text-lg leading-relaxed text-blue-100 md:text-2xl">
-              En BOA Estructuras diseñamos y fabricamos
-              parques infantiles, estructuras metálicas
-              de acero, cerramientos, barandillas,
-              mobiliario urbano y equipamiento deportivo.
+              En BOA Estructuras fabricamos
+              vallados, cerramientos, barandillas,
+              puertas, rejas, escaleras y
+              estructuras metálicas para
+              constructoras, empresas,
+              ayuntamientos y particulares.
             </p>
 
             <p className="mt-5 max-w-3xl text-lg leading-relaxed text-blue-100">
-              Soluciones de fabricación a medida para
-              constructoras, ayuntamientos, empresas
-              y proyectos de obra pública y privada.
+              Trabajamos desde Valencia,
+              ofreciendo soluciones de
+              carpintería metálica adaptadas
+              a las características de cada proyecto.
+              También somos fabricantes de
+              parques infantiles, mobiliario urbano
+              y equipamiento deportivo.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -242,7 +266,7 @@ export default function Home() {
                 href="#servicios"
                 className="rounded-full bg-green-500 px-8 py-4 text-center font-bold text-white shadow-xl hover:bg-green-600"
               >
-                Nuestros servicios
+                Ver nuestros trabajos
               </a>
 
               <a
@@ -256,80 +280,105 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CATEGORÍAS PRINCIPALES */}
+      {/* ACCESOS PRINCIPALES */}
 
-      <section
-        aria-labelledby="categorias-titulo"
-        className="bg-white px-6 py-16"
-      >
-        <div className="mx-auto max-w-7xl">
-          <h2
-            id="categorias-titulo"
-            className="mb-10 text-center text-3xl font-black text-blue-950 md:text-4xl"
-          >
-            Fabricación y equipamiento para cada proyecto
-          </h2>
+      <section className="bg-white px-6 py-14">
+        <div className="mx-auto grid max-w-7xl gap-5 text-center sm:grid-cols-2 lg:grid-cols-5">
+          {accesos.map((item) => (
+            <Link
+              key={item.nombre}
+              href={item.enlace}
+              className="block h-full"
+            >
+              <div className="h-full rounded-2xl bg-gray-100 p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <h2 className="text-xl font-black text-blue-950">
+                  {item.nombre}
+                </h2>
 
-          <div className="grid gap-5 text-center sm:grid-cols-2 lg:grid-cols-5">
-            {categorias.map((item) => (
-              <Link
-                key={item.titulo}
-                href={item.enlace}
-                className="block h-full"
-              >
-                <div className="h-full rounded-2xl bg-gray-100 p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-                  <h3 className="text-xl font-black text-blue-950">
-                    {item.titulo}
-                  </h3>
+                <p className="mt-3 text-sm text-gray-600">
+                  {item.descripcion}
+                </p>
 
-                  <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                    {item.descripcion}
-                  </p>
-
-                  <div className="mx-auto mt-5 h-[3px] w-10 rounded-full bg-green-500" />
-                </div>
-              </Link>
-            ))}
-          </div>
+                <div className="mx-auto mt-5 h-[3px] w-10 rounded-full bg-green-500" />
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 
-      {/* PRESENTACIÓN DE LA EMPRESA */}
+      {/* CARPINTERÍA METÁLICA */}
 
-      <section className="bg-gray-50 px-6 py-20">
+      <section
+        id="carpinteria-metalica"
+        className="scroll-mt-24 bg-gray-50 px-6 py-24"
+      >
         <div className="mx-auto max-w-6xl">
-          <p className="mb-3 font-semibold uppercase tracking-[0.25em] text-green-600">
-            BOA Estructuras
+          <p className="mb-3 font-semibold uppercase tracking-[0.3em] text-green-600">
+            NUESTRA ACTIVIDAD PRINCIPAL
           </p>
 
           <h2 className="max-w-5xl text-3xl font-black text-blue-950 md:text-5xl">
-            Fabricación de estructuras metálicas y equipamiento para espacios públicos
+            Fabricantes de carpintería metálica
+            y estructuras de acero en Valencia
           </h2>
 
-          <div className="mt-6 h-1 w-20 rounded-full bg-green-500" />
+          <div className="mt-6 h-1 w-24 rounded-full bg-green-500" />
 
-          <div className="mt-8 grid gap-8 text-lg leading-relaxed text-gray-700 md:grid-cols-2">
-            <p>
-              Somos una empresa dedicada a la fabricación
-              de parques infantiles, estructuras metálicas
-              y soluciones de carpintería metálica.
+          <p className="mt-8 max-w-5xl text-lg leading-relaxed text-gray-700">
+            BOA Estructuras está especializada
+            en trabajos de carpintería metálica
+            y fabricación a medida.
 
-              Trabajamos con perfiles de acero,
-              estructuras tubulares, mallas, chapas
-              y otros materiales según los requisitos
-              de cada proyecto.
-            </p>
+            Desarrollamos soluciones de acero
+            para proyectos de construcción,
+            cerramientos de parcelas,
+            instalaciones deportivas,
+            edificios y espacios públicos.
+          </p>
 
-            <p>
-              Desde Valencia desarrollamos trabajos
-              para constructoras, ayuntamientos,
-              empresas y clientes profesionales.
+          <p className="mt-6 max-w-5xl text-lg leading-relaxed text-gray-700">
+            Realizamos trabajos de fabricación
+            de barandillas, vallados, puertas,
+            rejas, escaleras, estructuras
+            tubulares, soportes metálicos
+            y elementos de cerrajería.
 
-              Estudiamos proyectos a partir de planos,
-              mediciones y necesidades concretas,
-              ofreciendo soluciones de fabricación
-              adaptadas a cada aplicación.
-            </p>
+            Podemos trabajar a partir de planos,
+            mediciones y especificaciones
+            técnicas para adaptar cada fabricación
+            a los requisitos del proyecto.
+          </p>
+
+          <h3 className="mt-12 text-2xl font-bold text-blue-950">
+            Carpintería metálica para constructoras,
+            empresas y ayuntamientos
+          </h3>
+
+          <p className="mt-5 max-w-5xl text-lg leading-relaxed text-gray-700">
+            Estudiamos trabajos para obra nueva,
+            reformas, instalaciones industriales
+            y equipamientos municipales.
+
+            Valoramos las dimensiones, materiales,
+            acabados, anclajes y demás
+            características necesarias
+            para preparar cada presupuesto.
+          </p>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Link
+              href="/cerramientos"
+              className="rounded-xl bg-blue-900 px-7 py-4 font-semibold text-white hover:bg-blue-700"
+            >
+              Ver cerramientos metálicos
+            </Link>
+
+            <Link
+              href="/proyectos"
+              className="rounded-xl border border-blue-900 px-7 py-4 font-semibold text-blue-900 hover:bg-blue-50"
+            >
+              Ver proyectos realizados
+            </Link>
           </div>
         </div>
       </section>
@@ -338,12 +387,12 @@ export default function Home() {
 
       <section
         id="servicios"
-        className="bg-gradient-to-b from-white to-gray-100 px-6 py-24"
+        className="scroll-mt-24 bg-white px-6 py-24"
       >
         <div className="mx-auto max-w-6xl">
           <div className="mb-14 text-center">
             <p className="mb-3 font-semibold uppercase tracking-[0.3em] text-green-600">
-              BOA Estructuras
+              BOA ESTRUCTURAS
             </p>
 
             <h2 className="text-4xl font-black text-blue-950 md:text-5xl">
@@ -356,11 +405,11 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {servicios.map((item) => (
               <article
-                key={item.titulo}
-                className="group flex flex-col rounded-3xl bg-white p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:bg-blue-950 hover:text-white"
+                key={item.nombre}
+                className="group flex flex-col rounded-3xl bg-gray-50 p-8 shadow-xl transition duration-300 hover:-translate-y-2 hover:bg-blue-950 hover:text-white"
               >
                 <h3 className="mb-4 text-2xl font-bold">
-                  {item.titulo}
+                  {item.nombre}
                 </h3>
 
                 <p className="flex-grow leading-relaxed text-gray-600 group-hover:text-blue-100">
@@ -369,7 +418,7 @@ export default function Home() {
 
                 <Link
                   href={item.enlace}
-                  className="mt-7 inline-block self-start font-semibold text-blue-900 underline underline-offset-4 group-hover:text-green-300"
+                  className="mt-8 inline-block self-start font-semibold text-blue-900 underline underline-offset-4 group-hover:text-green-300"
                 >
                   {item.boton}
                 </Link>
@@ -379,94 +428,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ESTRUCTURAS METÁLICAS */}
+      {/* FABRICACIÓN A MEDIDA */}
 
-      <section className="bg-white px-6 py-24">
+      <section className="bg-gray-50 px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <p className="mb-3 font-semibold uppercase tracking-[0.3em] text-green-600">
-            CARPINTERÍA METÁLICA
-          </p>
-
-          <h2 className="max-w-5xl text-3xl font-black text-blue-950 md:text-5xl">
-            Fabricantes de estructuras metálicas a medida en Valencia
+          <h2 className="text-3xl font-black text-blue-950 md:text-4xl">
+            Fabricación metálica a medida para cada obra
           </h2>
 
-          <div className="mt-5 h-1 w-20 rounded-full bg-green-500" />
-
-          <p className="mt-8 max-w-5xl text-lg leading-relaxed text-gray-700">
-            En BOA Estructuras realizamos trabajos
-            de fabricación metálica para diferentes
-            aplicaciones de construcción, industria,
-            urbanismo y equipamiento público.
+          <p className="mt-7 max-w-5xl text-lg leading-relaxed text-gray-700">
+            Trabajamos con diferentes perfiles
+            y materiales metálicos, incluyendo
+            tubos estructurales, perfiles
+            de acero, chapas, pletinas,
+            mallas y otros elementos
+            utilizados en carpintería metálica.
           </p>
 
           <p className="mt-5 max-w-5xl text-lg leading-relaxed text-gray-700">
-            Estudiamos estructuras de acero,
-            bastidores, soportes, cerramientos,
-            vallados, barandillas, puertas metálicas
-            y otros conjuntos de carpintería
-            metálica según las características
-            y exigencias de cada proyecto.
+            Podemos estudiar cerramientos
+            de grandes dimensiones,
+            barandillas para obras,
+            puertas metálicas, rejas,
+            escaleras y estructuras
+            fabricadas a medida.
+
+            Cada trabajo se desarrolla
+            según sus requisitos técnicos,
+            condiciones de uso y acabado.
           </p>
 
           <h3 className="mt-12 text-2xl font-bold text-blue-950">
-            Trabajos metálicos para constructoras y ayuntamientos
+            Trabajos de acero galvanizado y otros acabados
           </h3>
 
           <p className="mt-5 max-w-5xl text-lg leading-relaxed text-gray-700">
-            Podemos estudiar fabricación a partir
-            de documentación técnica, planos,
-            mediciones y especificaciones
-            de obra.
-
-            Valoramos materiales, dimensiones,
-            acabados, sistemas de fijación
-            y requisitos técnicos según
-            el tipo de instalación.
+            Estudiamos diferentes opciones
+            de protección y acabado,
+            como el galvanizado y la pintura,
+            según las características
+            de cada fabricación y
+            las condiciones de exposición.
           </p>
-
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/cerramientos"
-              className="rounded-xl bg-blue-900 px-7 py-4 font-semibold text-white transition hover:bg-blue-700"
-            >
-              Ver cerramientos metálicos
-            </Link>
-
-            <Link
-              href="/proyectos"
-              className="rounded-xl border border-blue-900 px-7 py-4 font-semibold text-blue-900 transition hover:bg-blue-50"
-            >
-              Ver proyectos realizados
-            </Link>
-          </div>
         </div>
       </section>
 
       {/* PARQUES INFANTILES */}
 
-      <section className="bg-gray-50 px-6 py-20">
+      <section className="bg-white px-6 py-20">
         <div className="mx-auto max-w-6xl">
+          <p className="mb-3 font-semibold uppercase tracking-[0.3em] text-green-600">
+            OTRA DE NUESTRAS ESPECIALIDADES
+          </p>
+
           <h2 className="text-3xl font-black text-blue-950 md:text-4xl">
-            Fabricantes de parques infantiles en Valencia
+            Fabricantes de Parques Infantiles
           </h2>
 
           <p className="mt-7 max-w-5xl text-lg leading-relaxed text-gray-700">
-            Fabricamos equipamiento para parques
-            infantiles y zonas de juego,
-            con diferentes modelos de estructuras
-            metálicas, madera y robinia.
+            Además de nuestra actividad
+            de carpintería metálica,
+            en BOA Estructuras fabricamos
+            parques infantiles para colegios,
+            ayuntamientos y espacios públicos.
 
-            Nuestro catálogo incluye conjuntos
-            multijuego, columpios, muelles
-            y otros elementos destinados
-            a parques, colegios y
-            espacios públicos.
+            Nuestro catálogo incluye parques
+            metálicos, estructuras de madera
+            y robinia, columpios, muelles
+            y conjuntos multijuego.
           </p>
 
           <Link
             href="/parques-infantiles"
-            className="mt-8 inline-block rounded-xl bg-blue-900 px-7 py-4 font-semibold text-white transition hover:bg-blue-700"
+            className="mt-8 inline-block rounded-xl bg-blue-900 px-7 py-4 font-semibold text-white hover:bg-blue-700"
           >
             Ver catálogo de parques infantiles
           </Link>
@@ -477,7 +511,7 @@ export default function Home() {
 
       <section
         id="galeria"
-        className="bg-white px-6 py-24"
+        className="bg-gray-50 px-6 py-24"
       >
         <div className="mx-auto max-w-6xl">
           <div className="mb-14 text-center">
@@ -490,6 +524,12 @@ export default function Home() {
             </h2>
 
             <div className="mx-auto mt-4 h-1 w-24 rounded-full bg-green-500" />
+
+            <p className="mx-auto mt-7 max-w-3xl text-lg text-gray-600">
+              Conoce algunos de nuestros
+              trabajos de fabricación
+              y equipamiento.
+            </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -500,7 +540,7 @@ export default function Home() {
               >
                 <Image
                   src={foto}
-                  alt={`Fotografía ${index + 1} de proyectos de BOA Estructuras`}
+                  alt={`Proyecto realizado por BOA Estructuras, fotografía ${index + 1}`}
                   width={500}
                   height={400}
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -539,37 +579,37 @@ export default function Home() {
           <div className="mx-auto mt-4 h-1 w-24 rounded-full bg-green-500" />
 
           <p className="mb-10 mt-8 text-lg text-blue-100">
-            Consulta nuestros catálogos comerciales
-            de parques infantiles y estructuras
-            metálicas para conocer diferentes
-            soluciones de fabricación.
+            Consulta nuestros catálogos
+            comerciales de carpintería
+            metálica, estructuras metálicas
+            y parques infantiles.
           </p>
 
           <div className="flex flex-col justify-center gap-6 md:flex-row">
             <a
-              href="/catalogos/Catálogo BOA parques infantiles.pdf"
+              href="/catalogos/Catálogo BOA Estructuras Metálicas.pdf"
               download
               className="rounded-full bg-green-500 px-8 py-4 font-semibold text-white transition hover:bg-green-600"
             >
-              Descargar catálogo parques
+              Descargar catálogo estructuras
             </a>
 
             <a
-              href="/catalogos/Catálogo BOA Estructuras Metálicas.pdf"
+              href="/catalogos/Catálogo BOA parques infantiles.pdf"
               download
               className="rounded-full bg-white px-8 py-4 font-semibold text-blue-950 transition hover:bg-gray-100"
             >
-              Descargar catálogo estructuras
+              Descargar catálogo parques
             </a>
           </div>
         </div>
       </section>
 
-      {/* CONTACTO ORIGINAL */}
+      {/* CONTACTO */}
 
       <section
         id="contacto"
-        className="bg-white px-6 py-20"
+        className="scroll-mt-24 bg-white px-6 py-20"
       >
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-3 font-semibold uppercase tracking-[0.3em] text-green-600">
@@ -583,10 +623,15 @@ export default function Home() {
           <div className="mx-auto mt-4 h-1 w-24 rounded-full bg-green-500" />
 
           <p className="mt-8 text-xl text-gray-600">
-            ¿Necesitas fabricar una estructura
-            metálica, un cerramiento o un parque
-            infantil? Envíanos las características
-            de tu proyecto.
+            ¿Necesitas fabricar una barandilla,
+            una puerta metálica, un vallado
+            o cualquier otro trabajo de
+            carpintería metálica?
+
+            Envíanos las dimensiones,
+            planos o características
+            del proyecto para solicitar
+            presupuesto.
           </p>
 
           <div className="mt-8 space-y-4 text-lg text-gray-700">
@@ -620,7 +665,7 @@ export default function Home() {
 
           <a
             href={`https://wa.me/${telefono}?text=${encodeURIComponent(
-              "Hola, quiero solicitar presupuesto de fabricación a BOA Estructuras."
+              "Hola, quiero solicitar presupuesto de un trabajo de carpintería metálica a BOA Estructuras."
             )}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -641,10 +686,11 @@ export default function Home() {
             </h2>
 
             <p className="mt-2 max-w-md text-sm leading-relaxed">
-              Fabricantes de parques infantiles,
-              estructuras metálicas, cerramientos,
-              barandillas, mobiliario urbano
-              y equipamiento deportivo en Valencia.
+              Especialistas en carpintería metálica
+              en Valencia. Fabricación de estructuras
+              metálicas, vallados, barandillas,
+              puertas, cerramientos, parques
+              infantiles y equipamiento urbano.
             </p>
           </div>
 
