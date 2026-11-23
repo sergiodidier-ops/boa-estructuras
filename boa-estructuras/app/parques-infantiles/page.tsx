@@ -2,345 +2,255 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const baseUrl = "https://www.boaestructuras.es";
+
 export const metadata: Metadata = {
-  title: "Parques Infantiles de Robinia | BOA Estructuras",
+  title: "Fabricantes de Parques Infantiles | BOA Estructuras",
   description:
-    "Fabricantes de parques infantiles de robinia y juegos de madera natural para exteriores. Descubre los 12 modelos de BOA Estructuras para ayuntamientos, colegios y espacios públicos.",
+    "Fabricantes de parques infantiles en Valencia. Parques metálicos, de madera, robinia, columpios y muelles para ayuntamientos, colegios y espacios públicos.",
   alternates: {
-    canonical:
-      "https://www.boaestructuras.es/parques-infantiles/robinia",
+    canonical: `${baseUrl}/parques-infantiles`,
   },
   openGraph: {
-    title: "Parques Infantiles de Robinia | BOA Estructuras",
+    title: "Parques Infantiles | BOA Estructuras",
     description:
-      "Catálogo de parques infantiles de robinia. Diseño, fabricación y personalización de áreas de juego naturales para exteriores.",
-    url: "https://www.boaestructuras.es/parques-infantiles/robinia",
+      "Catálogo de parques infantiles metálicos, de madera, robinia y juegos independientes.",
+    url: `${baseUrl}/parques-infantiles`,
     siteName: "BOA Estructuras",
-    locale: "es_ES",
     type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
+    locale: "es_ES",
   },
 };
 
-type Modelo = {
-  nombre: string;
-  imagen: string;
-  enlace: string;
-};
-
-const modelos: Modelo[] = [
+const categorias = [
   {
-    nombre: "RBN01",
+    nombre: "Parques Infantiles Metálicos",
+    subtitulo: "Serie Metal",
+    descripcion:
+      "Conjuntos de juego infantiles con estructuras metálicas, plataformas, toboganes y diferentes elementos de actividad.",
+    imagen: "/fotos/metal/mod-ksa-roco/portada.png",
+    enlace: "/parques-infantiles/metal",
+  },
+  {
+    nombre: "Parques Infantiles de Madera",
+    subtitulo: "Serie Madera",
+    descripcion:
+      "Parques infantiles con estructuras de madera y múltiples configuraciones para colegios, jardines y espacios públicos.",
+    imagen: "/fotos/madera/mod-kdiz/portada.png",
+    enlace: "/parques-infantiles/madera",
+  },
+  {
+    nombre: "Parques Infantiles de Robinia",
+    subtitulo: "Serie Robinia",
+    descripcion:
+      "Juegos infantiles de madera de robinia con diseños naturales para parques, colegios y entornos recreativos.",
     imagen: "/fotos/robinia/mod-rbn01/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-rbn01",
+    enlace: "/parques-infantiles/robinia",
   },
   {
-    nombre: "RBN02",
-    imagen: "/fotos/robinia/mod-rbn02/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-rbn02",
+    nombre: "Jugar es Crecer",
+    subtitulo: "Serie Jugar es Crecer",
+    descripcion:
+      "Conjuntos de juego infantiles con diferentes diseños, plataformas y actividades para espacios de juego.",
+    imagen: "/fotos/jugar-es-crecer/mod-castano/portada.png",
+    enlace: "/parques-infantiles/jugar-es-crecer",
   },
   {
-    nombre: "RBN03",
-    imagen: "/fotos/robinia/mod-rbn03/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-rbn03",
-  },
-  {
-    nombre: "RBN04",
-    imagen: "/fotos/robinia/mod-rbn04/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-rbn04",
-  },
-  {
-    nombre: "RBN05",
-    imagen: "/fotos/robinia/mod-rbn05/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-rbn05",
-  },
-  {
-    nombre: "RBN06",
-    imagen: "/fotos/robinia/mod-rbn06/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-rbn06",
-  },
-  {
-    nombre: "RBN07",
-    imagen: "/fotos/robinia/mod-rbn07/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-rbn07",
-  },
-  {
-    nombre: "RBN08",
-    imagen: "/fotos/robinia/mod-rbn08/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-rbn08",
-  },
-  {
-    nombre: "RBN09",
-    imagen: "/fotos/robinia/mod-rbn09/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-rbn09",
-  },
-  {
-    nombre: "RBN10",
-    imagen: "/fotos/robinia/mod-rbn10/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-rbn10",
-  },
-  {
-    nombre: "VELERO",
-    imagen: "/fotos/robinia/mod-velero/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-velero",
-  },
-  {
-    nombre: "BARCOMAD",
-    imagen: "/fotos/robinia/mod-barcomad/portada.png",
-    enlace: "/parques-infantiles/robinia/mod-barcomad",
+    nombre: "Juegos Independientes",
+    subtitulo: "Columpios y Muelles",
+    descripcion:
+      "Catálogo de columpios, balancines, muelles y juegos infantiles independientes para completar parques.",
+    imagen: "/fotos/independiente/columpios/col-metal-duo/portada.png",
+    enlace: "/parques-infantiles/independiente",
   },
 ];
 
-const telefono = "34676208656";
-const baseUrl = "https://www.boaestructuras.es";
-
-export default function RobiniaPage() {
-  const catalogoSchema = {
+export default function ParquesInfantilesPage() {
+  const schema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Parques Infantiles de Robinia | BOA Estructuras",
+    name: "Parques Infantiles | BOA Estructuras",
+    url: `${baseUrl}/parques-infantiles`,
     description:
-      "Catálogo de parques infantiles de robinia y juegos de madera natural para exteriores.",
-    url: `${baseUrl}/parques-infantiles/robinia`,
+      "Catálogo de parques infantiles y equipamiento de juego fabricado por BOA Estructuras.",
     mainEntity: {
       "@type": "ItemList",
-      numberOfItems: modelos.length,
-      itemListElement: modelos.map((modelo, index) => ({
+      numberOfItems: categorias.length,
+      itemListElement: categorias.map((categoria, index) => ({
         "@type": "ListItem",
         position: index + 1,
-        name: modelo.nombre,
-        url: `${baseUrl}${modelo.enlace}`,
+        name: categoria.nombre,
+        url: `${baseUrl}${categoria.enlace}`,
       })),
     },
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#eef4e7] via-[#f5f7f1] to-white px-6 py-20">
+    <main className="min-h-screen bg-white px-6 py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(catalogoSchema).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
         }}
       />
 
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto max-w-7xl">
 
         {/* NAVEGACION */}
 
         <nav
           aria-label="Ruta de navegación"
-          className="mb-12 text-sm text-green-900"
+          className="mb-12 text-sm text-gray-600"
         >
-          <Link href="/" className="hover:text-green-700">
+          <Link href="/" className="hover:text-blue-900">
             Inicio
           </Link>
           <span className="mx-2">/</span>
-          <Link
-            href="/parques-infantiles"
-            className="hover:text-green-700"
-          >
+          <span className="font-semibold text-gray-900">
             Parques infantiles
-          </Link>
-          <span className="mx-2">/</span>
-          <span className="font-semibold">Robinia</span>
+          </span>
         </nav>
 
         {/* CABECERA */}
 
-        <header className="text-center mb-24 relative">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.10),transparent_70%)]" />
+        <header className="mb-16 text-center">
+          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gray-500">
+            BOA ESTRUCTURAS
+          </span>
 
-          <div className="relative z-10">
-            <span className="uppercase tracking-[0.35em] text-green-700 font-semibold text-sm">
-              JUGAR ENTRE LA NATURALEZA
-            </span>
+          <h1 className="mt-4 text-4xl font-black text-gray-900 md:text-5xl">
+            Fabricantes de Parques Infantiles
+          </h1>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-green-950 mt-6 tracking-tight">
-              Parques Infantiles de Robinia
-            </h1>
+          <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-green-500" />
 
-            <div className="w-32 h-1 bg-green-700 mx-auto mt-6 rounded-full" />
+          <p className="mx-auto mt-7 max-w-4xl text-lg leading-relaxed text-gray-600">
+            En BOA Estructuras diseñamos y fabricamos
+            parques infantiles para ayuntamientos,
+            colegios, urbanizaciones y espacios públicos.
 
-            <p className="text-xl text-stone-700 mt-10 max-w-4xl mx-auto leading-relaxed">
-              En BOA Estructuras diseñamos y fabricamos
-              parques infantiles de robinia para crear
-              espacios de juego naturales y atractivos
-              al aire libre.
-
-              Nuestra Serie Robinia reúne diferentes
-              estructuras infantiles de madera para
-              parques públicos, colegios, urbanizaciones
-              y zonas recreativas.
-            </p>
-
-            <p className="text-lg text-stone-700 mt-6 max-w-4xl mx-auto leading-relaxed">
-              Descubre nuestros modelos de parques
-              infantiles de madera de robinia y consulta
-              las opciones disponibles para tu proyecto.
-
-              Fabricamos en Valencia y desarrollamos
-              soluciones para clientes de toda España.
-            </p>
-          </div>
+            Disponemos de diferentes series de
+            juegos infantiles metálicos, de madera,
+            de robinia y elementos independientes.
+          </p>
         </header>
 
-        {/* CATALOGO */}
+        {/* CATEGORIAS */}
 
-        <section aria-labelledby="catalogo-robinia">
+        <section aria-labelledby="catalogo-titulo">
           <h2
-            id="catalogo-robinia"
-            className="text-3xl font-bold text-green-950 text-center mb-5"
+            id="catalogo-titulo"
+            className="mb-12 text-center text-3xl font-bold text-gray-900"
           >
-            Catálogo de parques infantiles de robinia
+            Nuestro Catálogo de Parques Infantiles
           </h2>
 
-          <p className="text-center text-stone-700 text-lg mb-12">
-            Descubre nuestros {modelos.length} modelos
-            de la Serie Robinia y encuentra una solución
-            de juego natural para tu proyecto.
-          </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {modelos.map((modelo) => {
-              const mensaje = encodeURIComponent(
-                `Hola, quiero información y presupuesto del parque infantil de robinia ${modelo.nombre} de BOA Estructuras.`
-              );
-
-              return (
-                <article
-                  key={modelo.enlace}
-                  className="group bg-white/90 backdrop-blur-sm rounded-[2rem] overflow-hidden shadow-xl hover:shadow-2xl border border-green-100 transition duration-300"
-                >
-                  <Link href={modelo.enlace} className="block">
-                    <div className="bg-gradient-to-b from-[#f7f3e9] to-[#eef5e7] p-6 overflow-hidden">
-                      <img
-                        src={modelo.imagen}
-                        alt={`Parque infantil de robinia modelo ${modelo.nombre} de BOA Estructuras`}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-72 object-contain group-hover:scale-105 transition duration-500"
-                      />
-                    </div>
-
-                    <div className="px-8 pt-8">
-                      <span className="text-xs uppercase tracking-[0.3em] text-green-700">
-                        Serie Robinia
-                      </span>
-
-                      <h3 className="text-3xl font-black text-[#2d3c23] mt-3">
-                        {modelo.nombre}
-                      </h3>
-
-                      <div className="w-14 h-[3px] bg-green-700 rounded-full mt-4" />
-
-                      <span className="inline-block mt-8 bg-green-700 text-white px-6 py-3 rounded-xl font-semibold">
-                        Ver modelo
-                      </span>
-                    </div>
-                  </Link>
-
-                  <div className="px-8 pb-8 pt-5">
-                    <a
-                      href={`https://wa.me/${telefono}?text=${mensaje}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Solicitar información del modelo ${modelo.nombre} por WhatsApp`}
-                      className="inline-block bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-xl font-semibold transition"
-                    >
-                      Solicitar información
-                    </a>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {categorias.map((categoria) => (
+              <article
+                key={categoria.enlace}
+                className="flex flex-col overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              >
+                <Link href={categoria.enlace} className="group block">
+                  <div className="flex aspect-[4/3] items-center justify-center overflow-hidden bg-gray-50 p-5">
+                    <img
+                      src={categoria.imagen}
+                      alt={`${categoria.nombre} de BOA Estructuras`}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
+                    />
                   </div>
-                </article>
-              );
-            })}
+                </Link>
+
+                <div className="flex flex-grow flex-col p-7">
+                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">
+                    {categoria.subtitulo}
+                  </span>
+
+                  <h3 className="mt-2 text-2xl font-black text-gray-900">
+                    {categoria.nombre}
+                  </h3>
+
+                  <div className="mt-4 h-[3px] w-12 rounded-full bg-green-500" />
+
+                  <p className="mt-5 flex-grow leading-relaxed text-gray-600">
+                    {categoria.descripcion}
+                  </p>
+
+                  <Link
+                    href={categoria.enlace}
+                    className="mt-7 inline-block self-start rounded-xl bg-blue-900 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
+                  >
+                    Ver modelos
+                  </Link>
+                </div>
+              </article>
+            ))}
           </div>
         </section>
 
-        {/* FABRICACION */}
+        {/* INFORMACION SEO */}
 
-        <section className="mt-24 max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-green-950 mb-6">
-            Fabricación de parques infantiles de madera de robinia
+        <section className="mx-auto mt-24 max-w-5xl">
+          <h2 className="mb-6 text-3xl font-bold text-gray-900">
+            Fabricación de Parques Infantiles en Valencia
           </h2>
 
-          <p className="text-stone-700 text-lg leading-relaxed mb-6">
-            La madera de robinia se utiliza en equipamiento
-            infantil por sus características de resistencia
-            natural y su estética singular.
+          <p className="mb-6 text-lg leading-relaxed text-gray-600">
+            En BOA Estructuras fabricamos
+            equipamiento infantil con diferentes
+            materiales y configuraciones.
 
-            Sus formas y texturas permiten desarrollar
-            estructuras de juego con una apariencia
-            integrada en entornos naturales.
+            Nuestro catálogo incluye conjuntos
+            multijuego, columpios, muelles,
+            estructuras metálicas y juegos de madera
+            para zonas infantiles.
           </p>
 
-          <p className="text-stone-700 text-lg leading-relaxed mb-6">
-            En BOA Estructuras trabajamos con modelos
-            de parques infantiles de robinia que combinan
-            materiales naturales con diferentes elementos
-            de juego.
-
-            Podemos estudiar configuraciones y
-            adaptaciones en función de las características
-            y dimensiones de cada proyecto.
-          </p>
-
-          <h2 className="text-3xl font-bold text-green-950 mt-14 mb-6">
-            Juegos infantiles de robinia para espacios públicos
+          <h2 className="mb-6 mt-12 text-3xl font-bold text-gray-900">
+            Parques Infantiles para Ayuntamientos y Colegios
           </h2>
 
-          <p className="text-stone-700 text-lg leading-relaxed">
-            Nuestra Serie Robinia está dirigida a proyectos
-            de equipamiento infantil para ayuntamientos,
-            colegios, parques municipales y espacios
-            recreativos.
+          <p className="text-lg leading-relaxed text-gray-600">
+            Estudiamos proyectos de equipamiento
+            infantil para parques municipales,
+            centros educativos, áreas recreativas
+            y espacios públicos.
 
-            Disponemos de diferentes diseños para crear
-            áreas de juego con una estética natural
-            y posibilidades de personalización.
+            Podemos valorar configuraciones,
+            dimensiones y acabados según los
+            requisitos de cada instalación,
+            teniendo en cuenta las condiciones
+            de uso y la normativa aplicable.
           </p>
         </section>
 
         {/* PRESUPUESTO */}
 
-        <section className="mt-20 rounded-[2rem] bg-green-950 p-8 md:p-14 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            ¿Necesitas un parque infantil de robinia?
+        <section className="mt-20 rounded-3xl bg-blue-950 p-8 text-center md:p-14">
+          <h2 className="mb-6 text-3xl font-bold text-white">
+            Solicita presupuesto de parques infantiles
           </h2>
 
-          <p className="text-lg text-green-100 max-w-3xl mx-auto mb-8">
-            Contacta con BOA Estructuras para solicitar
-            información y presupuesto de nuestros
-            parques infantiles de robinia.
-
-            Te ayudamos a elegir un modelo adecuado
-            para tu proyecto de equipamiento infantil.
+          <p className="mx-auto mb-8 max-w-3xl text-lg text-blue-100">
+            Contacta con BOA Estructuras para
+            solicitar información sobre nuestros
+            modelos de parques infantiles,
+            columpios y equipamiento de juego.
           </p>
 
           <a
-            href={`https://wa.me/${telefono}?text=${encodeURIComponent(
-              "Hola, quiero solicitar presupuesto para un parque infantil de robinia de BOA Estructuras."
+            href={`https://wa.me/34676208656?text=${encodeURIComponent(
+              "Hola, quiero solicitar presupuesto de parques infantiles de BOA Estructuras."
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold transition"
+            className="inline-block rounded-xl bg-green-600 px-8 py-4 font-semibold text-white hover:bg-green-700"
           >
             Solicitar presupuesto por WhatsApp
           </a>
         </section>
-
-        {/* OTRAS SERIES */}
-
-        <div className="mt-14 text-center">
-          <Link
-            href="/parques-infantiles"
-            className="font-semibold text-green-800 hover:underline"
-          >
-            Ver todas las series de parques infantiles
-          </Link>
-        </div>
 
       </div>
     </main>
